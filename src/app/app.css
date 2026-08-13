@@ -1,0 +1,27 @@
+:host
+{
+    font-size: 20px;
+}
+
+nav
+{
+    display: flex;
+    list-style-type: none;
+    background-color: yellow;
+    height: 75px;
+}
+
+li
+{
+    cursor: pointer;
+    height: 50px;
+    width: 125px;
+    margin-right: 10px;
+    background-color: lightcoral;
+    transition: 0.3s ease;
+}
+
+li:hover
+{
+    background-color: lightgreen;
+}

@@ -1,0 +1,28 @@
+<style>
+    :host
+    {
+        font-size: 25px;
+    }
+</style>
+
+<p>Escribe esta frase:</p>
+@for (letra of frase_array; track letra)
+{
+    @if (letra.complete == true)
+    {
+        <label style="color: green;">{{ letra.char }}</label>
+    
+    } @else if (letra.complete == false)
+    {
+        <label style="color: blue;">{{ letra.char }}</label>
+    
+    } @else
+    {
+        <label style="color: red;">{{ letra.char }}</label>
+    }
+}
+<br><br>
+<textarea style="height: 300px; width: 500px;" (keydown)="teclaPresionada($event)"></textarea>
+<br>
+<button (click)="Anterior()">Anterior frase</button>
+<button (click)="Siguiente()">Siguiente frase</button>
