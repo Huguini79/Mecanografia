@@ -77,18 +77,24 @@ export class Mecanografia
             this.frase = this.frase_original;
             this.current_pos = 0;
             this.rellenarArray();
+            let textarea = document.getElementById('textarea') as HTMLInputElement;
+            textarea.value = '';
 
         } else if (this.current_pos_phrase == 1)
         {
             this.frase = this.frase1;
             this.current_pos = 0;
             this.rellenarArray();
+            let textarea = document.getElementById('textarea') as HTMLInputElement;
+            textarea.value = '';
 
         } else if (this.current_pos_phrase == 2)
         {
             this.frase = this.frase2;
             this.current_pos = 0;
             this.rellenarArray();
+            let textarea = document.getElementById('textarea') as HTMLInputElement;
+            textarea.value = '';
         }
     }
 
@@ -103,7 +109,7 @@ export class Mecanografia
             this.frase = this.frase1;
             this.current_pos = 0;
             this.rellenarArray();
-            let textarea = document.getElementById('') as HTMLInputElement;
+            let textarea = document.getElementById('textarea') as HTMLInputElement;
             textarea.value = '';
 
         } else if (this.current_pos_phrase == 2)
@@ -111,6 +117,8 @@ export class Mecanografia
             this.frase = this.frase2;
             this.current_pos = 0;
             this.rellenarArray();
+            let textarea = document.getElementById('textarea') as HTMLInputElement;
+            textarea.value = '';
         }
     }
 }
