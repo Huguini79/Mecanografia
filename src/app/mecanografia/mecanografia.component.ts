@@ -103,6 +103,8 @@ export class Mecanografia
             this.frase = this.frase1;
             this.current_pos = 0;
             this.rellenarArray();
+            let textarea = document.getElementById('') as HTMLInputElement;
+            textarea.value = '';
 
         } else if (this.current_pos_phrase == 2)
         {
