@@ -5,6 +5,13 @@
     }
 </style>
 
+{{ contador }}
+<br>
+<label style="color: green;">Correctas: {{ correctas_de_frase_actual }} </label>
+<label style="color: red;">| Incorrectas: {{ incorrectas_de_frase_actual }}</label>
+<br><br>
+{{ yeaah }}
+
 <p>Escribe esta frase:</p>
 @for (letra of frase_array; track letra)
 {
@@ -21,6 +28,7 @@
         <label style="color: red;">{{ letra.char }}</label>
     }
 }
+
 <br><br>
 <textarea id="textarea" style="height: 300px; width: 500px;" (keydown)="teclaPresionada($event)"></textarea>
 <br>
